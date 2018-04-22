@@ -1,7 +1,9 @@
-const {model} = require('..models');
+const Sequelize = require("sequelize");
+const {models} = require('../models');
+
 
 exports.index = (req, res, next) => {
-  models.quizzes.findAll()
+  models.quiz.findAll()
   .then(quizzes => {
       res.render("quizzes", {quizzes})
     })

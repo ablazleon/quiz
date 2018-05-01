@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 
 /* GET credits. */
 router.get('/credits', function(req, res, next) {
-    res.render('index', { title: 'Autores' });
+    res.render('credits', { title: 'Autores' });
 });
 
 /* GET quizzes. */

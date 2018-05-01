@@ -7,14 +7,18 @@
 <body>
 <h1> Quiz </h1>
 
+<p> Welcome to Quiz </p>
+
+<p> Pregunta Número 1 </p>
+
 <ul>
+
     <% for (let i in quizzes ){ %>
     <% const quiz = quizzes[i] %>
 
     <li>
         <%= quiz.question %> : <%= quiz.answer %>
     </li>
-
     <% } %>
 </ul>
 
